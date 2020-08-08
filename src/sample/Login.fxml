@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<Pane prefHeight="520.0" prefWidth="485.0" scaleShape="false" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+   <ImageView fitHeight="527.0" fitWidth="485.0" pickOnBounds="true">
+      <Image url="@images/blackJackTableIMG.JPG"/>
+   </ImageView>
+   <TextField fx:id="usernameField" alignment="CENTER" layoutX="52.0" layoutY="136.0" prefHeight="31.0"
+              prefWidth="337.0" promptText="Username" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="96.0"/>
+   <PasswordField fx:id="pwField" alignment="CENTER" layoutX="52.0" layoutY="183.0" prefHeight="31.0" prefWidth="337.0"
+                  promptText="Password" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="96.0"/>
+   <Button fx:id="signInButton" alignment="CENTER" layoutX="176.0" layoutY="245.0" mnemonicParsing="false"
+           onAction="#signIn" prefHeight="31.0" prefWidth="90.0" text="Sign In" textAlignment="CENTER"/>
+   <Button fx:id="newUserButton" layoutX="176.0" layoutY="295.0" mnemonicParsing="false" onAction="#newUser"
+           prefHeight="31.0" prefWidth="90.0" text="New User"/>
+   <Button fx:id="createNewUserButton" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="345.0"
+           mnemonicParsing="false" onAction="#createNewUser" prefHeight="31.0" prefWidth="102.0" text="Create User"
+           textAlignment="CENTER" visible="false" wrapText="true"/>
+   <Label fx:id="signInOrErrorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="214.0"
+          prefHeight="21.0" prefWidth="330.0" wrapText="true"/>
+   <Label alignment="CENTER" layoutX="92.0" layoutY="52.0" prefHeight="21.0" prefWidth="258.0"
+          text="Welcome, Please Sign In" textAlignment="CENTER">
+      <font>
+         <Font size="20.0"/>
+      </font>
+   </Label>
+</Pane>

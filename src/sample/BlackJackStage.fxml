@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane prefHeight="630.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.BlackJackStage">
+   <ImageView fitHeight="645.0" fitWidth="1054.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@images/blackJackTableIMG.JPG"/>
+   </ImageView>
+   <Button fx:id="hitMeButton" layoutX="870.0" layoutY="565.0" mnemonicParsing="false" onAction="#hitMeButton"
+           text="Hit" visible="false">
+      <font>
+         <Font size="20.0"/>
+      </font>
+   </Button>
+   <Button fx:id="stayButton" layoutX="281.0" layoutY="565.0" mnemonicParsing="false" onAction="#stayButton" text="Stay"
+           visible="false">
+      <font>
+         <Font size="20.0"/>
+      </font>
+   </Button>
+   <ImageView fx:id="cardOnePlayerImage" fitHeight="120.0" fitWidth="78.0" layoutX="300.0" layoutY="344.0"
+              pickOnBounds="true" preserveRatio="true"/>
+   <ImageView fx:id="cardTwoPlayerImage" fitHeight="120.0" fitWidth="78.0" layoutX="326.0" layoutY="371.0"
+              pickOnBounds="true" preserveRatio="true"/>
+   <ImageView fx:id="cardThreePlayerImage" fitHeight="120.0" fitWidth="78.0" layoutX="346.0" layoutY="404.0"
+              pickOnBounds="true" preserveRatio="true"/>
+   <ImageView fx:id="cardFourPlayerImage" fitHeight="120.0" fitWidth="78.0" layoutX="372.0" layoutY="431.0"
+              pickOnBounds="true" preserveRatio="true"/>
+   <ImageView fx:id="cardFivePlayerImage" fitHeight="120.0" fitWidth="78.0" layoutX="398.0" layoutY="464.0"
+              pickOnBounds="true" preserveRatio="true"/>
+   <ImageView fx:id="cardSixPlayerImage" fitHeight="120.0" fitWidth="78.0" layoutX="424.0" layoutY="491.0"
+              pickOnBounds="true" preserveRatio="true"/>
+   <ImageView fx:id="cardSixComputerImage" fitHeight="120.0" fitWidth="78.0" layoutX="401.0" layoutY="204.0"
+              pickOnBounds="true" preserveRatio="true"/>
+   <ImageView fx:id="cardFiveComputerImage" fitHeight="120.0" fitWidth="78.0" layoutX="375.0" layoutY="177.0"
+              pickOnBounds="true" preserveRatio="true"/>
+   <ImageView fx:id="cardFourComputerImage" fitHeight="120.0" fitWidth="78.0" layoutX="349.0" layoutY="144.0"
+              pickOnBounds="true" preserveRatio="true"/>
+   <ImageView fx:id="cardThreeComputerImage" fitHeight="120.0" fitWidth="78.0" layoutX="323.0" layoutY="117.0"
+              pickOnBounds="true" preserveRatio="true"/>
+   <ImageView fx:id="cardTwoComputerImage" fitHeight="120.0" fitWidth="78.0" layoutX="303.0" layoutY="84.0"
+              pickOnBounds="true" preserveRatio="true"/>
+   <ImageView fx:id="cardOneComputerImage" fitHeight="120.0" fitWidth="78.0" layoutX="277.0" layoutY="57.0"
+              pickOnBounds="true" preserveRatio="true"/>
+   <Label fx:id="information" layoutX="847.0" layoutY="307.0" prefHeight="35.0" prefWidth="193.0"/>
+   <Button fx:id="dealButton" layoutX="479.0" layoutY="333.0" mnemonicParsing="false" onAction="#dealButton"
+           text="Deal!" visible="false">
+      <font>
+         <Font size="21.0"/>
+      </font>
+   </Button>
+   <Button fx:id="bet25" layoutX="665.0" layoutY="565.0" mnemonicParsing="false" onAction="#bet25" text="\$25"/>
+   <Button fx:id="bet100" layoutX="727.0" layoutY="565.0" mnemonicParsing="false" onAction="#bet100" text="\$100"/>
+   <Button fx:id="bet5" layoutX="612.0" layoutY="565.0" mnemonicParsing="false" onAction="#bet5" text="\$5"/>
+   <Label fx:id="totalBetBox" layoutX="763.0" layoutY="414.0" prefHeight="35.0" prefWidth="53.0" textFill="RED">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Label>
+   <Label layoutX="831.0" layoutY="284.0" text="Player Total"/>
+   <Label layoutX="673.0" layoutY="418.0" text="Total Bet"/>
+   <Label layoutX="655.0" layoutY="478.0" text="Chip Count"/>
+   <Label layoutX="769.0" layoutY="478.0"/>
+   <Label fx:id="cashCountBox" layoutX="763.0" layoutY="478.0" prefHeight="27.0" prefWidth="53.0" text="1000"
+          textFill="RED">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Label>
+   <Button fx:id="nextHandButton" layoutX="463.0" layoutY="288.0" mnemonicParsing="false" onAction="#reset"
+           text="Next Hand" visible="false"/>
+   <Label layoutX="72.0" layoutY="436.0" text="Win Percentage"/>
+   <Label fx:id="winPercentBox" layoutX="96.0" layoutY="465.0" prefHeight="27.0" prefWidth="78.0"
+          textAlignment="CENTER"/>
+</Pane>
